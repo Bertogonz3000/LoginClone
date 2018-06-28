@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/backGroundColor">
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:alpha=".6"
+        android:ems="10"
+        android:hint="Email or Phone"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etName"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha=".6"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="173dp"
+        android:background="@color/backGroundColor"
+        android:elevation="0dp"
+        android:text="Sign up for Facebook"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:background="@color/backGroundColor"
+        android:elevation="0dp"
+        android:text="Forgot Password?"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/logInButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="172dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:background="@android:color/darker_gray"
+        android:outlineAmbientShadowColor="@color/backGroundColor"
+        android:outlineSpotShadowColor="@color/backGroundColor"
+        android:shadowColor="@color/backGroundColor"
+        android:text="Log In"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/fblogo"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        app:srcCompat="@drawable/fblogo" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/forgotButton"
+        android:layout_marginTop="177dp"
+        android:text="English   •"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/changeButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="55dp"
+        android:layout_height="19dp"
+        android:layout_alignEnd="@+id/signUpButton"
+        android:layout_alignTop="@+id/language"
+        android:background="@color/backGroundColor"
+        android:fontFamily="sans-serif"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>
